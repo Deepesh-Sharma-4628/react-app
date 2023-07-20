@@ -35,21 +35,16 @@ function Navbar() {
 	return (
 		<div className="flex my-4  tablet:justify-between w-full tablet:my-4 desktop:z-20">
 			<div className="w-1/2">
-				<Link to="/book">
-					<img src={Logo} className="w-40" alt="" />
-				</Link>
+				
 			</div>
 			{!isAuthenticated ? (
 				<div className="flex gap-2 justify-end w-1/2">
 						<button className="bg-merahTua text-white px-2 py-1 rounded-md" onClick={() => loginWithRedirect()}>Log In</button>
 					
-					<Link to="/register">
-						<button className="bg-biru text-white px-2 py-1 rounded-md">Daftar</button>
-					</Link>
 				</div>
 			) : (
 				<div className="flex gap-2 justify-end w-1/2">
-					<Link to="/">
+					<Link to="/home">
 						<button className="bg-merahTua text-white px-3 py-2 rounded-md" onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}> Log Out</button>
 					</Link>
 					<div className="w-10 h-10 bg-yellow-300 rounded-full">
@@ -59,7 +54,7 @@ function Navbar() {
 						{menu && (
 							<div className="bg-blue-400 z-20 mt-1 rounded-md w-[180px] py-2 absolute right-0 top-11">
 								<ul className="flex flex-col gap-2">
-									<Link to="/book">
+									<Link to="/">
 										<li className="text-sm hover:bg-blue-500 py-1 text-white pl-2">Book List</li>
 									</Link>
 									<Link to="/pinjambuku">
@@ -71,14 +66,7 @@ function Navbar() {
 									<Link to="/history_peminjaman">
 										<li className="text-sm hover:bg-blue-500 py-1 text-white pl-2">Loan History</li>
 									</Link>
-									<Link to="/EditUser">
-										<li className="text-sm hover:bg-blue-500 py-1 text-white pl-2">EditUser</li>
-									</Link>
-									<Link to="/">
-										<li className="text-sm hover:bg-blue-500 py-1 text-white pl-2" onClick={logOutHandler}>
-											Keluar
-										</li>
-									</Link>
+									
 								</ul>
 							</div>
 						)}

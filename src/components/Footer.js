@@ -16,15 +16,15 @@ function Footer() {
           </ul>
         </div>
         <div className="company mt-4 tablet:mt-0">
-          <p className='text-slate-800 font-semibold text-medium mb-4'>Company</p>
+          <p className='text-slate-800 font-semibold text-medium mb-4'>Books</p>
           <ul>
             <li className='cursor-pointer text-slate-600 text-sm font-normal mb-2'>Book Advertisement</li>
             <li className='cursor-pointer text-slate-600 text-sm font-normal mb-2'>Ads with Us</li>
-            <li className='cursor-pointer text-slate-600 text-sm font-normal mb-2'>Company Profile</li>
+            
           </ul>
         </div>
         <div className="about mt-4 tablet:mt-0">
-          <p className='text-slate-800 font-semibold text-medium mb-4'>About BukuBuku</p>
+          <p className='text-slate-800 font-semibold text-medium mb-4'>About Us</p>
           <ul>
             <li className='cursor-pointer text-slate-600 text-sm font-normal mb-2'>About Us</li>
             <li className='cursor-pointer text-slate-600 text-sm font-normal mb-2'>Career with Us</li>
